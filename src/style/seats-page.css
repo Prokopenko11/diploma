@@ -1,0 +1,222 @@
+.seats-page__content {
+  width: 68%;
+}
+
+.seats-page__content-title {
+  margin-bottom: 55px;
+
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.seats-page__direction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 36px 19px 0 19px;
+  margin-bottom: 32px;
+}
+
+.seats-page__direction-right {
+  justify-content: end;
+}
+
+.seats-page__direction-btn {
+  padding: 14px 22px;
+
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0;
+
+  color: #292929;
+  border: 1px solid #292929;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.seats-page__direction-btn:hover {
+  cursor: pointer;
+  color: #FFA800;
+}
+
+.seats-page__direction-btn:active {
+  background-color: #FFA800;
+  color: #292929;
+  border: none;
+}
+
+.route-details {
+  display: flex;
+  align-items: center;
+  padding: 17px 0;
+
+  background-color: #F7F6F6;
+}
+
+.route-details p {
+  margin: 0;
+}
+
+.route-details__train {
+  display: flex;
+  gap: 30px;
+  width: 25%;
+  padding-left: 35px;
+
+  border-right: 1px solid #FFFFFF;
+}
+
+.rout-details__ticket-direction {
+  width: 50%;
+  margin-bottom: 0;
+  padding: 10px 40px 10px 36px;
+  gap: 0;
+
+  border-right: 1px solid #FFFFFF;
+}
+
+.route-details__duration {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 25%;
+  padding-left: 35px;
+}
+
+.rout-details__duration-value {
+  font-size: 18px;
+}
+
+.passenger-count {
+  padding: 34px 1px 32px 0;
+
+  border-bottom: 1px dashed #C4C4C4;
+}
+
+.passenger-count__title {
+  margin: 0 0 20px 19px;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.passenger-count__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.passenger-count__wrapper:focus-within {
+  background-color: #F7F6F6;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.passenger-count__wrapper-input {
+  box-sizing: border-box;
+  width: 240px;
+  padding: 15px 0 15px 16px;
+  margin-bottom: 23px;
+
+  border-radius: 5px;
+  border: 1px solid #928F94;
+}
+
+.passenger-count__wrapper-input::placeholder {
+  color: #292929;
+}
+
+.passenger-count__wrapper-text {
+  margin: 0;
+}
+
+.wrapper-text__grey {
+  color: #928F94;
+}
+
+.passenger-count__wrapper {
+  box-sizing: border-box;
+  width: calc((100% / 3) - 1px);
+  padding: 20px 41px 19px 36px;
+}
+
+.passenger-count__wrapper:hover:not(:focus-within) {
+  outline: 1px solid rgba(255, 168, 0, 0.79);
+}
+
+.wagon-types {
+  padding: 23px 0 26px 19px;
+}
+
+.wagon-types__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.wagon-types__wrapper {
+  display: flex;
+  padding-left: 5px;
+  gap: 130px;
+}
+
+.wagon-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+  border: none;
+  color: #C4C4C4;
+}
+
+.wagon-type:hover {
+  color: #FFA800;
+  cursor: pointer;
+}
+
+.wagon-type.active {
+  color: #FFA800;
+}
+
+.wagon-type__title {
+  margin-top: 18px;
+  font-size: 24px;
+}
+
+.seats-page__content-button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.seats-page__content-button {
+  padding: 15px 70px;
+  margin-top: 70px;
+
+  font-weight: 700;
+  font-size: 24px;
+
+  background-color: #FFA800;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #FFA800;
+  cursor: pointer;
+}
+
+.seats-page__content-button.is-disabled {
+  background-color: #928F94;
+  border: 1px solid #928F94;
+  cursor: not-allowed;
+}
+
+.seats-page__content-button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.seats-page__content-button.is-disabled:hover {
+  box-shadow: none;
+}
+
+.seats-page__content-button:active {
+  background-color: transparent;
+  color: #FFA800;
+}

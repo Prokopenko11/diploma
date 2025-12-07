@@ -1,0 +1,314 @@
+.wagon-map {
+  position: relative;
+  width: 921px;
+  margin: auto;
+}
+
+.map-image {
+  display: block;
+  width: 100%;
+  margin-top: -5px;
+}
+
+.seat-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+}
+
+.wagon-seat {
+  fill: #F2F2F2;
+  stroke: #cccccc;
+  stroke-width: 2;
+  pointer-events: all;
+}
+
+.wagon-seat.available {
+  fill: #F2F2F2;
+}
+
+.wagon-seat.unavailable {
+  fill: #cccccc;
+}
+
+.wagon-seat.selected {
+  stroke: #FFA800;
+  stroke-width: 2;
+}
+
+.seat-number {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.seat-number__second-class,
+.seat-number__first-class {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.wagon-seat.available:hover {
+  stroke: #FFA800;
+  cursor: pointer;
+}
+
+.wagon-number {
+  fill: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.wagon-options {
+  display: flex;
+  gap: 10px;
+  margin-top: -6px;
+}
+
+.wagon-option {
+  position: relative;
+}
+
+.wagon-option__tooltip {
+  position: absolute;
+  z-index: 100;
+  bottom: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 6px 10px;
+  display: none;
+  min-width: 100%;
+
+  background-color: #F5F4F6;
+  color: #292929;
+  border-radius: 5px;
+}
+
+.wagon-option__tooltip::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #F5F4F6;
+}
+
+.wagon-option:hover .wagon-option__tooltip {
+  display: block;
+}
+
+.option {
+  width: 36px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #292929;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.option__selected {
+  background-color: #FDB935;
+  color: #F4F2F6;
+  border: 1px solid #FDB935;
+}
+
+.option__unselected {
+  background-color: #FFFFFF;
+  stroke: 1px solid #292929;
+  color: #292929;
+}
+
+.option__included {
+  background-color: #FCDC9D;
+  cursor: not-allowed;
+  border: 1px solid #FCDC9D;
+  color: #928F94;
+}
+
+.option.option__unselected:hover {
+  background-color: #FFA800;
+  border: 1px solid #FFA800;
+  color: #292929;
+}
+
+.wagon-information__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 9px 2px 33px;
+
+  background-color: rgba(255, 168, 0, 0.44);
+}
+
+.wagon-information__header p {
+  margin: 0;
+}
+
+.wagon-information__header-numbers {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+
+  font-size: 18px;
+
+  color: #292929;
+}
+
+.wagon-information__header-number {
+  font-weight: 700;
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.wagon-information__header-number.active {
+  color: #fff;
+}
+
+.seat-info {
+  display: flex;
+}
+
+.seat-info__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 33px 58px 0 85px;
+}
+
+.seats-info__title {
+  display: flex;
+  gap: 10px;
+}
+
+.seat-info__wagon-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 37px 70px 33px 36px;
+
+  line-height: 0.95;
+  font-weight: 700;
+  font-size: 72px;
+
+  color: #292929;
+  background-color: #FFD98F;
+}
+
+.wagon-number__span {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.seat-info__total-number {
+  display: flex;
+  align-items: baseline;
+}
+
+.seats-info__title {
+  margin-bottom: 24px;
+
+  font-size: 18px;
+
+  color: #928F94;
+}
+
+.seats-info__title-span {
+  text-transform: uppercase;
+
+  color: #C4C4C4;
+}
+
+.seat-info__total-number {
+  display: flex;
+  gap: 10px;
+}
+
+.seat-info__number-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.total-number__span {
+  font-size: 18px;
+}
+
+.seat-info__number {
+  display: flex;
+  gap: 10px;
+
+  font-size: 24px;
+}
+
+.seat-info__number-span {
+  font-weight: 700;
+}
+
+.seats-info__prices {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.seats-info__price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.seats-info__price-currency {
+  margin-left: 10px;
+
+  font-weight: 400;
+
+  color: #928F94;
+}
+
+.wagon-information__passengers-wrapper {
+  display: flex;
+  justify-content: end;
+  padding-right: 33px;
+  padding-top: 5px;
+}
+
+.wagon-information__passengers {
+  width: 199px;
+  box-sizing: border-box;
+  padding: 16px 13px 16px 16px;
+
+  background-color: #F3F3F3;
+  color: #292929;
+  border-radius: 5px;
+}
+
+.wagon-information__total-price-wrapper {
+  display: flex;
+  justify-content: end;
+  padding: 23px 30px 28px 0;
+}
+
+.wagon-information__total-price {
+  font-weight: 700;
+  font-size: 24px;
+
+  color: #FFA800;
+}
+
+.seats-details {
+  background-color: #fff;
+  border: 1px solid #C4C4C4;
+  margin-bottom: 29px;
+}

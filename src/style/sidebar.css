@@ -1,0 +1,475 @@
+.train-page__sidebar {
+  width: 25.5%;
+}
+
+.train-page__filters {
+  box-sizing: border-box;
+  margin-bottom: 89px;
+
+  background-color: #3E3C41;
+}
+
+.sidebar__inputs {
+  position: relative;
+  box-sizing: border-box;
+  padding: 11px 37px 35px 29px;
+}
+
+.sidebar__inputs::after,
+.sidebar__filters::after,
+.sidebar__price::after,
+.sidebar__direction-full::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.sidebar__input {
+  padding: 10px 14px;
+  width: calc(100% - 25px);
+
+  font-size: 18px;
+
+  color: #292929;
+  border-radius: 3px;
+  border: none;
+}
+
+.sidebar__input::placeholder {
+  color: #E5E5E5;
+}
+
+.sidebar__input-wrapper {
+  position: relative;
+}
+
+.sidebar__input-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  width: 20px;
+  height: 22px;
+
+  background-image: url('../images/calendar.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sidebar__title {
+  margin-bottom: 8px;
+  display: block;
+
+  font-size: 30px;
+
+  color: #FFFFFF;
+}
+
+.sidebar__filters {
+  position: relative;
+
+  padding: 30px 37px 23px 67px;
+}
+
+.filters__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+.filters__item:last-child {
+  margin-bottom: 0;
+}
+
+.filters__item-content {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.filters__item-title {
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.toggle-switch {
+  position: relative;
+
+  width: 72px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch.enabled {
+  background-color: #FCDC9D;
+}
+
+.toggle-knob {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.toggle-switch.enabled .toggle-knob {
+  transform: translateX(46px);
+  background-color: #FFA800;
+}
+
+.sidebar__price {
+  position: relative;
+
+  padding: 36px 37px 37px 28px;
+}
+
+.price-filter__boarders {
+  margin-top: -2px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-filter__boarder {
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.horizontal-slider {
+  position: relative;
+
+  width: 100%;
+  height: 19px;
+  margin: auto;
+
+  border-radius: 8px;
+  border: 1px solid #C4C4C4;
+}
+
+.track-before {
+  background: transparent;
+  height: 100%;
+  top: 0;
+}
+
+.track-active {
+  background: #FFA800;
+  border-radius: 8px;
+  height: 100%;
+  top: 0;
+}
+
+.track-after {
+  background: transparent;
+  height: 100%;
+  top: 0;
+}
+
+.thumb {
+  position: relative;
+  top: -3px;
+
+  height: 24px;
+  width: 24px;
+
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  cursor: grab;
+  outline: none;
+}
+
+.thumb-label {
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #E5E5E5;
+  transform: translateX(-50%);
+}
+
+.filter__labels {
+  position: relative;
+
+  font-size: 16px;
+
+  color: #E5E5E5;
+}
+
+.price-filter {
+  padding-bottom: 23px;
+}
+
+.filter__label {
+  position: absolute;
+  right: 0;
+  bottom: -27px;
+
+  transition: opacity 0.3s ease;
+}
+
+.filter__label-min {
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+
+  transition: opacity 0.3s ease;
+}
+
+.input__label {
+  margin-top: 29px;
+}
+
+
+.label-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar__direction-full {
+  position: relative;
+
+  padding: 23px 37px 36px 32px;
+}
+
+.sidebar__direction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direction__wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.direction__title {
+  font-weight: 700;
+  font-size: 30px;
+
+  color: #FFFFFF;
+}
+
+.add-button__icon {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  fill: #fff;
+  color: #fff;
+}
+
+.add-button__icon-minus {
+  top: 7px;
+  left: 2px;
+}
+
+.direction__add-button {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.direction__add-button:hover {
+  border-color: #FCDC9D;
+}
+
+.direction__add-button:active {
+  border-color: #C4C4C4;
+}
+
+.direction__add-button:hover .add-button__icon {
+  fill: #FCDC9D;
+  color: #FCDC9D;
+}
+
+.direction__add-button:active .add-button__icon {
+  fill: #C4C4C4;
+  color: #C4C4C4;
+}
+
+.direction-full__wrapper-hidden {
+  display: none;
+}
+
+.direction-full__wrapper-visible {
+  display: block;
+  padding-bottom: 39px;
+}
+
+.direction-full__content {
+  position: relative;
+  margin-top: 20px;
+}
+
+.direction-full__title {
+  margin-bottom: 14px;
+
+  font-size: 24px;
+
+  color: #E5E5E5;
+}
+
+.timefilter-slider {
+  height: 10px;
+}
+
+.timefilter-thumb {
+  width: 18px;
+  height: 18px;
+
+  top: -5px;
+}
+
+.timefilter-thumb-label {
+  bottom: -30px;
+}
+
+.timefilter__label {
+  position: absolute;
+  bottom: -33px;
+  right: 0;
+}
+
+.timefilter__wrapper-first {
+  margin-bottom: 130px;
+}
+
+.direction-full__title-right {
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+.last-tickets__title {
+  margin-bottom: 29px;
+
+  font-weight: 500;
+  font-size: 30px;
+
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.last-ticket__item {
+  padding: 18px 12px 18px 18px;
+  margin-bottom: 17px;
+
+  box-shadow: 0px 2px 2px 0px rgba(62, 60, 65, 0.25);
+  border: 1px solid #C4C4C4;
+  background-color: #fff;
+}
+
+.last-ticket__direction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.last-ticket__direction-content {
+  max-width: 50%;
+}
+
+.direction__city {
+  font-size: 20px;
+
+  color: #292929;
+}
+
+.direction__station {
+  font-size: 16px;
+
+  color: #928F94;
+}
+
+.direction-to__city,
+.direction-to__station {
+  justify-self: end;
+}
+
+.last-ticket__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last-ticket__conveniences {
+  display: flex;
+}
+
+.conveniences__item {
+  display: none;
+}
+
+.conveniences__item.have-wifi {
+  display: block;
+  margin-right: 9px;
+  width: 20px;
+  height: 16px;
+
+  background-image: url('../images/wifi-icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.conveniences__item.have-express {
+  display: block;
+  margin-right: 9px;
+  width: 16px;
+  height: 16px;
+
+  background-image: url('../images/express-icon.svg');
+  background-repeat: no-repeat;
+}
+
+.conveniences__item-food {
+  display: block;
+  margin-right: 9px;
+  width: 20px;
+  height: 18px;
+
+  background-image: url('../images/food.svg');
+  background-repeat: no-repeat;
+}
+
+.last-ticket__price {
+  font-size: 16px;
+
+  color: #928F94;
+}
+
+.price__span {
+  margin: 0 5px;
+
+  font-weight: 700;
+  font-size: 36px;
+
+  color: #FFA800;
+}
