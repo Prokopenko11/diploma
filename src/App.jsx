@@ -12,7 +12,7 @@ import ScrollToTop from './components/SrollToTop';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/diploma">
       <ScrollToTop />
       <div className="App">
         <Routes>
