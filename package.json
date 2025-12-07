@@ -2,7 +2,7 @@
   "name": "intro",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Prokopenko11.github.io/diploma",
+  "homepage": "https://prokopenko11.github.io/diploma",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@testing-library/dom": "^10.4.0",
@@ -52,6 +52,7 @@
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^6.3.0",
     "react-calendar": "^6.0.0"
   }
 }
